@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinak Idea Lab</title>
+    <style>
+      .yellowbox {
+        background-color: yellow;
+        /* width: 500px; */
+        height: 100%;
+        /* display: flex; */
+        align-items: flex-end;
+        justify-content: center;
+        width: 800px;
+        margin: auto;
+        border: 2px solid blue;
+      }
+      #redbox {
+        position: relative;
+        top: .7px;
+        text-align: center;
+        padding: 12px;
+        margin: 0px;
+        height: 200px;
+        width: 97%;
+        overflow: hidden;
+      }
+      #redbox:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 140%;
+        width: 51%;
+        background: red;
+        transform: skew(0deg, 24deg);
+      }
+      #redbox:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 140%;
+        width: 50%;
+        background: red;
+        transform: skew(0deg, -24deg);
+      }
+      h1{
+        position: relative;
+        left: 238px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .smile{
+        position: relative;
+        left: 350px;
+        background-color: burlywood;
+        width: 99px;
+        height: 99px;
+        border-radius: 100%;
+        display: inline-block;
+      }
+      div.smileyface {
+        display: inline-block;
+    
+	width: 300px;
+	height: 300px;
+	position: relative;
+    left: 250px;
+    rotate: -90deg;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	display: block;
+	background: #ffb432;
+
+	}
+	
+p.eyes {
+	width: 50px;
+	height: 80px;
+	background: #222;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	position: absolute;
+	top: 40px;
+	box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	}	
+	
+	p.eyes.lefteye {
+		left: 75px;
+		}
+		
+	p.eyes.righteye {
+		right: 75px;
+		}
+		
+div.smile {
+	width: 200px;
+	height: 70px;
+	border: 10px solid #222;
+	border-top: 0;
+	background: rgba(0,0,0,0);
+	-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	position: absolute;
+	bottom: 50px;
+	left: 38px;
+	box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	}
+	
+div.corner {
+	width: 10px;
+	height: 30px;
+	background: #222;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	position: absolute;
+	top: -12px;
+	-webkit-transform: rotate(65deg);
+	-moz-transform: rotate(65deg);
+	left: -12px;
+	}
+	
+	div.corner.right {
+		left: 202px;
+		-webkit-transform: rotate(-65deg);
+		-moz-transform: rotate(-65deg);		
+		}
+    </style>
+  </head>
+  <body>
+    <div class="yellowbox">
+        <h1>Pinak Idea Labs</h1>
+        <div class="smileyface">
+            <p class="eyes lefteye"></p>
+            <p class="eyes righteye"></p>
+            <div class="smile">
+                <div class="corner"></div>
+                <div class="corner right"></div>
+            </div>
+        </div>
+      <div id="redbox"></div>
+    </div>
+  </body>
+</html>
